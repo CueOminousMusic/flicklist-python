@@ -57,7 +57,7 @@ class AddMovie(webapp2.RequestHandler):
         # TODO 1
         # Use a template to render the confirmation message
         t = jinja_env.get_template("add.html")
-        content = t.render()
+        content = t.render(new_movie_escaped=new_movie_escaped)
 
         self.response.write(content)
 
