@@ -56,8 +56,10 @@ class AddMovie(webapp2.RequestHandler):
 
         # TODO 1
         # Use a template to render the confirmation message
+        t = jinja_env.get_template("add.html")
+        content = t.render()
 
-        self.response.write("Under construction...")
+        self.response.write(content)
 
 
 class CrossOffMovie(webapp2.RequestHandler):
