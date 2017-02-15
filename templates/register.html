@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlickList</title>
+        <style type="text/css">
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+
+<h1>Signup</h1>
+<form method="post">
+  <label for="username">username</label><input name="username" type="text" value="{{  }}" />
+  <span class="error">{{ errors.username }}</span>
+
+  <label for="password">password</label><input name="password" type="passowrd" value="{{  }}" />
+  <span class="error">{{ errors.password }}</span>
+
+  <label for="verify">Verify Password</label><input name="verify" type="pasword" value="{{  }}" />
+  <span class="error">{{ errors. }}</span>
+
+  <input type="submit" name="submit" value="Sumbit" />
+</form>
+
+<p>
+  Already have an account? <a href="/login">Login here</a>
+</p>
+
+      </body>
+  </html>
